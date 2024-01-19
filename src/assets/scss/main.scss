@@ -1,0 +1,158 @@
+.header {
+    &-nav {
+        border: solid red;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    &-download {
+        color: #FF5151;
+        background-color:rgba(219, 92, 87, 0.2);
+        border-radius: 5px;
+        padding: 0.35rem;
+    }
+}
+.home-block {
+    &-img {
+        height: 35rem;
+        border: solid #00EC00;
+        background-image: url("@/assets/img/img_001.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &-text{
+            text-align: center;
+            background-color: aliceblue;
+            border: solid #00EC00;
+        }
+    }
+    &-service {
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        border: solid #00EC00;
+        &-item {
+            height: 20rem;
+            text-align: center;
+        }
+        &-icon {
+            display: inline-block;
+            vertical-align: unset;
+            position: relative;
+            width: 2em;
+            height: 2em;
+            border-radius: 50%;
+            background-color: #FFE153;
+            padding-top: 0.3em;
+            margin-top: 0.4em;
+            margin-bottom: 0.4em;
+        }
+    }
+    &-portfolio {
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        border: solid #00EC00;
+        &-list {
+            height: 45rem;
+        }
+        &-item {
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+            border: solid #00EC00;
+
+        }
+    }
+    &-about {
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        border: solid #00EC00;
+        &-timeline {
+            width:200px;
+            height:200px;
+            margin-left: 42%;
+            margin-right: 43%;
+            position: absolute;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+        &-list {
+            height: 15rem;
+            list-style: none;
+        }
+        &-img {
+            max-width:100%; 
+            height:auto;
+            border-radius: 50%;
+            border:0.5rem solid #D0D0D0;
+            border-width: 0.5rem;
+        }
+        &-time-panel {
+            width: 30%;
+            height: auto;
+            text-align: right;
+            position: relative;
+            margin-left: 12%;
+        }
+        &-time-panel-right {
+            @extend .home-block-about-time-panel;
+                margin-left: 57%;
+                text-align: left;
+        }
+        &-title {
+            height: 10%;
+        }
+        &-content {
+            height: 90%;
+        }
+    }
+    &-team {
+        text-align: center;
+        border: solid #00EC00;
+        &-img {
+            @extend .home-block-about-img;
+        }
+        &-frame {
+            width:200px;
+            height:200px;
+            margin:auto;
+        }
+        &-text {
+            width: 50%;
+            background-color: antiquewhite;
+            margin: auto;
+        }
+    }
+    &-cooperate {
+        text-align: center;
+        border: solid #00EC00;
+        &-img {
+            width:25%; 
+        }
+    }
+    &-contact {
+        text-align: center;
+        border: solid #00EC00;
+        padding-bottom: 90px;
+        padding-top: 90px;
+        &-text {
+            margin-bottom: 50px;
+            margin-top: 50px;
+            width: 500px;
+            margin-left: 35%;
+        }
+        &-text-area {
+            @extend .home-block-contact-text;
+            margin-left:0%;
+            height: 230px;
+        }
+    }
+    &-footer {
+        text-align: center;  
+    }
+}
+
+a {
+    color: gray;
+}
